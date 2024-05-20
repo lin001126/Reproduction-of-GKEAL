@@ -31,13 +31,14 @@ python main.py GKEAL --dataset CIFAR-100 --base-ratio 0.6 --phases 8 \
     --use-afc --augment-count 200
 
 
+If you only want to perform continual learning, remove the `use-afc` and `augment-count` parameters:
 
-If you only want to perform continual learning, remove the use-afc and augment-count parameters:
 ```bash
 python main.py GKEAL --dataset CIFAR-100 --base-ratio 0.6 --phases 8 \
     --data-root ~/dataset --IL-batch-size 2560 --num-workers 16 --backbone resnet32 \
     --gamma 0.1 --sigma 10 --buffer-size 8192 \
     --backbone-path ./backbones/resnet32_CIFAR-100_0.6_None
+
 
 
 For more detailed information on how to run the code and train the backbone from scratch, please refer to the [Analytic Continual Learning](https://github.com/ZHUANGHP/Analytic-continual-learning).

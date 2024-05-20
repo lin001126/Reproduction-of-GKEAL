@@ -29,7 +29,7 @@ python main.py GKEAL --dataset CIFAR-100 --base-ratio 0.6 --phases 8 \
     --gamma 0.1 --sigma 10 --buffer-size 8192 \
     --backbone-path ./backbones/resnet32_CIFAR-100_0.6_None \
     --use-afc --augment-count 200
-
+```
 
 If you only want to perform continual learning, remove the `use-afc` and `augment-count` parameters:
 

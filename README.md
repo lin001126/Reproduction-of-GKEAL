@@ -32,7 +32,7 @@ python main.py GKEAL --dataset CIFAR-100 --base-ratio 0.6 --phases 8 \
     --gamma 0.1 --sigma 10 --buffer-size 8192 \
     --backbone-path ./backbones/resnet32_CIFAR-100_0.6_None
 ```
-
+If you want to use vit on cifar100 please resize the img directly.
 
 For more detailed information on how to run the code and train the backbone from scratch, please refer to the [Analytic Continual Learning](https://github.com/ZHUANGHP/Analytic-continual-learning).
 
